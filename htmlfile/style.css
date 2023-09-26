@@ -333,8 +333,7 @@ html {
 }
 
 .grid-item1 {
-    background: url(./details-1-background.jpg) center center no-repeat;
-    background-size: cover;
+    height: 100vh;
     grid-area: A;
     height: 100vh;
 
@@ -351,8 +350,7 @@ html {
 }
 
 .grid-item4 {
-    background: url(./details-2-background.jpg) center center no-repeat;
-    background-size: cover;
+    height: 100vh;
     grid-area: D;
     height: 100vh;
 }
@@ -1280,6 +1278,18 @@ color: #484a48;
     }
     .links-box-item2 p, .links-box-item3 p, .links-box-item4 p{
         display: flex;
+        flex-direction: column;
+    }
+    .main-call-me-section{
+        margin-top: 6rem;
+    }
+}
+
+@media screen  and (max-width:640px){
+    .button-headings{
+        flex-wrap: wrap;
+    }
+    .about-section-data-analysis{
         flex-direction: column;
     }
 }
